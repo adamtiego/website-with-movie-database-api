@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(58, 51, 51);
+}
+
+.movies-block {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    width: 1110px;
+    min-height: 300px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.highlighted {
+    background-color: rgb(53, 53, 137) !important;
+    color: white;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: auto;
+    gap: 6px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 26px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+}
+
+.arrow-right, .arrow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+}
+
+#input-search {
+    margin-top: 60px;
+    width: 400px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 6px;
+}
+
+.type {
+    margin-top: 6px;
+}
+
+.modal {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: flex-start;
+    height: 100px;
+    max-width: 100%;
+    border-bottom: 2px solid rgb(217, 205, 205);
+}
+
+.modal-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+.modal-close i {
+    font-size: 24px;
+}
